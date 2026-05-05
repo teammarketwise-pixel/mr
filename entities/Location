@@ -1,0 +1,78 @@
+{
+  "name": "Location",
+  "type": "object",
+  "properties": {
+    "adres": {
+      "type": "string",
+      "description": "Volledig adres van het bord"
+    },
+    "post_code": {
+      "type": "number",
+      "description": "Postcode van de locatie"
+    },
+    "stad": {
+      "type": "string",
+      "description": "Stad of gemeente"
+    },
+    "prijs_7_dagen": {
+      "type": "number",
+      "description": "Basisprijs per 7 dagen in EUR (intern, zonder marge)"
+    },
+    "panel_nummers": {
+      "type": "string",
+      "description": "Alle panelnummers kommagescheiden"
+    },
+    "doelgroepen": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden: Forensen, Shoppers, Studenten, Passanten, Stadsbewoners"
+    },
+    "taalgebied": {
+      "type": "string",
+      "description": "NL, FR of Beide"
+    },
+    "populariteit": {
+      "type": "string",
+      "description": "Toplocatie, Hot spot, Populair of Uniek"
+    },
+    "vervoersmiddel": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "locatietype": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "sector": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "doelleeftijd": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "gezinssamenstelling": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "zichtbaarheidsduur": {
+      "type": "string",
+      "description": "Korte blootstelling, Gemiddelde blootstelling of Lange blootstelling"
+    },
+    "actie": {
+      "type": "string",
+      "description": "Meerdere waarden kommagescheiden"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "GPS breedtegraad"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "GPS lengtegraad"
+    }
+  },
+  "required": [
+    "adres",
+    "post_code"
+  ]
+}
