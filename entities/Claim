@@ -1,0 +1,105 @@
+{
+  "name": "Claim",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Volledige naam van de contactpersoon"
+    },
+    "company_name": {
+      "type": "string",
+      "description": "Bedrijfsnaam"
+    },
+    "btw_nummer": {
+      "type": "string",
+      "description": "BTW-nummer"
+    },
+    "facturatie_adres": {
+      "type": "string",
+      "description": "Volledig facturatieadres"
+    },
+    "email": {
+      "type": "string",
+      "description": "E-mailadres"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefoonnummer"
+    },
+    "selected_location_ids": {
+      "type": "string",
+      "description": "Kommagescheiden locatie IDs"
+    },
+    "selected_locations_summary": {
+      "type": "string",
+      "description": "Tekst-samenvatting van geselecteerde locaties"
+    },
+    "aantal_weken": {
+      "type": "number",
+      "description": "Gewenste duur in weken (1-12)"
+    },
+    "start_datum": {
+      "type": "string",
+      "format": "date",
+      "description": "Gewenste startdatum"
+    },
+    "eind_datum": {
+      "type": "string",
+      "format": "date",
+      "description": "Berekende einddatum"
+    },
+    "opmerking": {
+      "type": "string",
+      "description": "Vrij tekstveld voor speciale wensen"
+    },
+    "prijs_excl_btw": {
+      "type": "number",
+      "description": "Totaalprijs excl. BTW (418 x weken x locaties)"
+    },
+    "btw_bedrag": {
+      "type": "number",
+      "description": "BTW-bedrag 21%"
+    },
+    "prijs_incl_btw": {
+      "type": "number",
+      "description": "Totaalprijs incl. BTW"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "In behandeling",
+        "Actie vereist",
+        "In verwerking",
+        "Bevestigd",
+        "Actief",
+        "Afgelopen"
+      ],
+      "default": "In behandeling",
+      "description": "Huidige status van de claim"
+    },
+    "campagne_afbeelding_url": {
+      "type": "string",
+      "description": "URL van ge\u00fcploade campagneafbeelding"
+    },
+    "betaald": {
+      "type": "boolean",
+      "default": false,
+      "description": "Of de factuur betaald is"
+    },
+    "bevestigde_startdatum": {
+      "type": "string",
+      "format": "date",
+      "description": "Door beheerder bevestigde startdatum"
+    },
+    "bevestigde_einddatum": {
+      "type": "string",
+      "format": "date",
+      "description": "Door beheerder bevestigde einddatum"
+    }
+  },
+  "required": [
+    "client_name",
+    "email",
+    "selected_location_ids"
+  ]
+}
