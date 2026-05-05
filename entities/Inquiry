@@ -1,0 +1,48 @@
+{
+  "name": "Inquiry",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Name of the client"
+    },
+    "email": {
+      "type": "string",
+      "description": "Client email"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Client phone number"
+    },
+    "selected_location_ids": {
+      "type": "string",
+      "description": "Comma-separated location IDs"
+    },
+    "budget": {
+      "type": "number",
+      "description": "Client budget in euros"
+    },
+    "region": {
+      "type": "string",
+      "description": "Target region"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Target audience type"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Nieuw",
+        "In Behandeling",
+        "Geboekt"
+      ],
+      "default": "Nieuw",
+      "description": "Status of the inquiry"
+    }
+  },
+  "required": [
+    "client_name",
+    "email"
+  ]
+}
